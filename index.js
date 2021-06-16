@@ -53,11 +53,21 @@ function Airplane(name) {
   Person.prototype.poop = function (){
     this.stomach = [];
   }
-  
+  Person.prototype.toString = function(){
+    return `${this.name}, ${this.age}`;
+  }
+
  
  
 
-  
+  // const romy = new Person ('Romy', 29);
+  // console.log(romy);
+  // console.log(romy.eat('taco'));
+  // console.log(romy.eat('snickers'));
+  // console.log(romy.stomach);
+  // romy.poop();
+  // console.log(romy.stomach);
+  // console.log(romy.toString());
   
   
   
