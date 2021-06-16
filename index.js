@@ -131,10 +131,10 @@ function Car(model, milesPerGallon) {
   /* 
     TASK 4
     In your own words explain the four principles for the "this" keyword below:
-    1. 
-    2. 
-    3. 
-    4. 
+    1. WINDOW - If you don't define it then you get the whole "window" back. i.e. it returns the window, the global object in node or undefined in 'strict' mode
+    2. IMPLICIT - 80% of the time this is the case. When function is invoked look to the left of the dot and THAT is what "this" referst to. It is "implied."
+    3. EXPLICIT - used with .call(), .bind(), .apply()... the argument is "explicitly" bound to "this." example abc.call(object-xyz): "this" is bound explicityly to object-xyz
+    4. Used with 'new' keyword builds a brand new object and 'this' points/refers to it. When a function is then invoked as a constructor 'this' points/refers to the newly created objec. 
   */
   
   
