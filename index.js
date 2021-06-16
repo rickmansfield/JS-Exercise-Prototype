@@ -122,6 +122,8 @@ function Car(model, milesPerGallon) {
    Person.call(this, name, age);
    this.favoriteToy = favoriteToy;
   }
+
+  Baby.prototype = Object.create(Person.prototype);
  
   
   /* 
