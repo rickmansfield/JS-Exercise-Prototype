@@ -107,6 +107,9 @@ function Car(model, milesPerGallon) {
   console.log(truck);
   console.log(truck.drive(300));
   console.log(truck);
+  truck.fill(20);
+  truck.drive(50);
+  console.log(truck);
   
   /*
     TASK 3
@@ -115,8 +118,9 @@ function Car(model, milesPerGallon) {
       - Besides the methods on Person.prototype, babies have the ability to `.play()`:
           + Should return a string "Playing with x", x being the favorite toy.
   */
- function Baby() {
-   
+ function Baby(name, age, favoriteToy) {
+   Person.call(this, name, age);
+   this.favoriteToy = favoriteToy;
   }
  
   
