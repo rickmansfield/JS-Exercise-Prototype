@@ -60,14 +60,14 @@ function Airplane(name) {
  
  
 
-  // const romy = new Person ('Romy', 29);
-  // console.log(romy);
-  // console.log(romy.eat('taco'));
-  // console.log(romy.eat('snickers'));
-  // console.log(romy.stomach);
-  // romy.poop();
-  // console.log(romy.stomach);
-  // console.log(romy.toString());
+  const romy = new Person ('Romy', 29);
+  console.log(romy);
+  console.log(romy.eat('taco'));
+  console.log(romy.eat('snickers'));
+  console.log(romy.stomach);
+  romy.poop();
+  console.log(romy.stomach);
+  console.log(romy.toString());
   
   
   
@@ -85,9 +85,12 @@ function Airplane(name) {
           + The `drive` method should return a string "I ran out of fuel at x miles!" x being `odometer`.
   */
   
- function Car() {
-    
-  }
+  function Car(model, milesPerGallon) {
+      this.modle = model;
+      this.milesPerGallon = milesPerGallon;
+      this.tank = 0;
+      this.odometer = 0;
+    }
   
   
   /*
