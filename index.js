@@ -57,9 +57,6 @@ function Airplane(name) {
     return `${this.name}, ${this.age}`;
   }
 
- 
- 
-
   const romy = new Person ('Romy', 29);
   console.log(romy);
   console.log(romy.eat('taco'));
@@ -91,7 +88,9 @@ function Airplane(name) {
       this.tank = 0;
       this.odometer = 0;
     }
-  
+  Car.prototype.fill = function(gallons){
+    return this.tank = gallons;
+  }
   
   /*
     TASK 3
