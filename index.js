@@ -124,7 +124,9 @@ function Car(model, milesPerGallon) {
   }
 
   Baby.prototype = Object.create(Person.prototype);
- 
+  Baby.prototype.play = function(){
+    return `Playing with ${this.favoriteToy}`;
+  }
   
   /* 
     TASK 4
